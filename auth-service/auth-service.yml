@@ -1,5 +1,5 @@
 server:
-  port: 9093
+  port: 9091
 spring:
   datasource:
     url: jdbc:mysql://localhost:3308/smsoauth?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8&useLegacyDatetimeCode=false&serverTimezone=UTC
