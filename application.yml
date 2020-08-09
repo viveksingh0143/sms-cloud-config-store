@@ -4,7 +4,7 @@ api:
 security:
   oauth2:
     resource:
-      token-info-uri: http://localhost:9092/oauth/check_token
+      token-info-uri: http://auth-service/oauth/check_token
     client:
       client-id: oauth2-jwt-client
       client-secret: admin1234
