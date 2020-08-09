@@ -1,2 +1,11 @@
 server:
   port: 8094
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+    hostname: localhost:8091
+  environment: development
+  datacenter: HindustanTimes
