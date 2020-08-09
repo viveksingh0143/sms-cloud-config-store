@@ -1,3 +1,17 @@
 api:
   pagination:
     max_per_page: 100
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9092/oauth/check_token
+    client:
+      client-id: oauth2-jwt-client
+      client-secret: admin1234
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+    hostname: localhost:9091
