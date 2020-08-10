@@ -4,7 +4,9 @@ api:
 security:
   oauth2:
     resource:
-      token-info-uri: lb://auth-service/oauth/check_token
+      service-id: auth-service
+      token-info-uri: http://${security.oauth2.resource.service-id}/oauth/check_token
+      loadBalanced: true
     client:
       client-id: oauth2-jwt-client
       client-secret: admin1234
