@@ -4,7 +4,7 @@ api:
 security:
   oauth2:
     resource:
-      prefer-token-info: false
+      prefer-token-info: true
       service-id: auth-service
       token-info-uri: http://${security.oauth2.resource.service-id}/oauth/check_token
       loadBalanced: true
