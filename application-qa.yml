@@ -5,7 +5,7 @@ security:
   oauth2:
     resource:
       service-id: auth-service
-      token-info-uri: http://${security.oauth2.resource.service-id}/oauth/check_token
+      token-info-uri: http://localhost:8092/oauth/check_token
       loadBalanced: true
     client:
       client-id: oauth2-jwt-client

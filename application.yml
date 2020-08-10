@@ -5,8 +5,8 @@ security:
   oauth2:
     resource:
       prefer-token-info: true
-      service-id: auth-service--1981170505
-      token-info-uri: http://${security.oauth2.resource.service-id}/oauth/check_token
+      service-id: auth-service
+      token-info-uri: http://localhost:9092/oauth/check_token
       loadBalanced: true
     client:
       client-id: oauth2-jwt-client
