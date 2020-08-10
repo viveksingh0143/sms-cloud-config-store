@@ -1,14 +1,6 @@
 api:
   pagination:
     max_per_page: 100
-security:
-  oauth2:
-    resource:
-      service-id: auth-service
-      token-info-uri: http://localhost:9092/oauth/check_token
-    client:
-      client-id: oauth2-jwt-client
-      client-secret: admin1234
 eureka:
   client:
     register-with-eureka: true
