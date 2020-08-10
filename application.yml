@@ -22,4 +22,4 @@ eureka:
     hostname: localhost
 logging:
   level:
-    root: TRACE
+    root: INFO
